@@ -6,11 +6,12 @@ In this project aim to build and train a convolutional neural network (CNN) usin
 
 ## Dataset
 The dataset used for this proejct is **Intel Image Classification**, which is a collection of natural scene images that are divided into six categories: **buildings**, **forest**, **glacier**, **mountain**, **sea**, and **street**. The dataset contains around 25,000 images of size 150x150 pixels. The dataset is catagorized into two parts, the first part is gonna be used for traning the model and the other one be used to testing the model accurcy (seg_train, seg_test).
-
 The dataset is available on Kaggle at https://www.kaggle.com/datasets/puneet6060/intel-image-classification/code.
-
+![DatasetTheme](https://github.com/GaafarDev/ImageClassification/assets/115364146/c551d9e4-1ca2-4ce5-8cf6-54bb73ae48c5)
 
 ## Model Architecture
+![Architecture](https://github.com/GaafarDev/ImageClassification/assets/115364146/379e617a-d4d8-4dbb-9699-01953d113953)
+
 The model is a sequential CNN with the following layers:
 - Conv2D with 32 filters, kernel size of 3, and ReLU activation
 - MaxPooling2D with pool size of 2
@@ -27,6 +28,8 @@ The model is compiled with the Adam optimizer, sparse categorical crossentropy l
 
 ## Evaluation
 The model's performance is evaluated using a test generator, which processes images from the test set.
+![image](https://github.com/GaafarDev/ImageClassification/assets/115364146/614998bf-5228-407e-9410-aaae98eb28ed)
+
 
 ## Custom Predictions
 The project also includes code to load and preprocess custom images from Google Drive, predict their classes using the trained model, and display the images with their predicted labels.
